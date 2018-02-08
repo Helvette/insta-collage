@@ -10,6 +10,8 @@ $(document).ready(function() {
 	    alert('Ingresa un nombre de usuario o una contraseña con más de 6 dígitos.');
 	  }
 	});
+})
+
 	function drag(ev) {
 		console.log(ev.target.src);
 		ev.dataTransfer.setData('text', ev.target.id);
@@ -31,6 +33,5 @@ $(document).ready(function() {
 		ev.target.appendChild(document.getElementById(id_foto));
 		ev.target.style.border = 'none';
 	}
-})
 
 
