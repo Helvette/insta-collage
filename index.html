@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Insta Collage</title>
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+	<!-- mis estilos -->
+	<link rel="stylesheet" href="assets/css/styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<!-- iniciando sesión -->
+	<div class="sign text-center">
+		<div class="sign-container"> <!-- sin el nav, con el padding -->
+			<div class="language row">
+				<p class="col-12">
+					Idioma
+					<select name="language" id="">
+						<option value="spanish" selected>español (España)</option>
+					</select>
+				</p>
+			</div>
+			<div class="logoInsta text-center">
+				<img src="assets/img/instagram.png" alt="Instagram">
+			</div>
+			<div class="login row">
+				<input type="text" placeholder="Ingresa tu Nombre de Usuario" class="col-12 login-stuff" id="mail">
+				<input type="password" placeholder="Ingresa tu Contraseña" class="col-12 login-stuff" id="pass">
+				<button class="col-12 login-stuff" id="log-in">Iniciar Sesión</button>
+			</div>
+			<div class="pie-de-letra row">
+				<p class="col-12">¿Has olvidado tu información de inicio de sesión? <a href="">Obtén ayuda</a></p>
+				<div class="or col-12">
+					<hr>
+					<p>o</p>
+					<hr>
+				</div>
+				<p class="col-12 fb"><a href=""><i class="fab fa-facebook-square"></i> Inicia Sesión con Facebook</a></p>
+			</div>
+		</div>
+		<div class="register row col-12">
+			<p class="col-12">¿No tienes una cuenta? <a href="">Regístrate</a></p>
+		</div>
+	</div>
+	<!-- contenedor de collage -->
+	<div class="collage-container">
+		<div class="collage row">
+			<div class="col-6 one">
+				<figure class="collage-1" ondragover="permitirDrop(event)" ondrop="drop(event)"></figure>
+				<figure class="collage-2" ondragover="permitirDrop(event) " ondrop="drop(event)" ></figure>
+			</div>
+			<div class="col-6 two">
+				<figure class="collage-3" ondragover="permitirDrop(event)" ondrop="drop(event)" ></figure>
+			</div>
+			<div class="col-12 three">
+				<figure class="collage-4" ondragover="permitirDrop(event)" ondrop="drop(event)"></figure>
+			</div>
+		</div>
+		<!-- separación collage a fotos -->
+		<div class="logo text-center">
+			<p>
+				<i class="fab fa-instagram"></i> Photo Booth
+			</p>
+		</div>
+		<!-- fotos -->
+		<div class="photos row">
+			<div class="photos-container col-3">
+				<figure>
+					<img src="assets/img/dinosaur.jpg" alt="" draggable="true" ondragstart="drag(event)" id="foto1">
+				</figure>
+			</div>
+			<div class="photos-container col-3">
+				<figure>
+					<img src="assets/img/cat.jpg" alt="" draggable="true" ondragstart="drag(event)" id="foto2">
+				</figure>
+			</div>
+			<div class="photos-container col-3">
+				<figure>
+					<img src="assets/img/flowers.jpg" alt="" draggable="true" ondragstart="drag(event)" id="foto3">
+				</figure>
+			</div>
+			<div class="photos-container col-3">
+				<figure>
+					<img src="assets/img/snow.jpg" alt="" draggable="true" ondragstart="drag(event)" id="foto4">
+				</figure>
+			</div>
+			<div class="photos-container col-3">
+				<figure>
+					<img src="assets/img/josuke.jpg" alt="Josuke" draggable="true" ondragstart="drag(event)" id="foto5">
+				</figure>
+			</div>
+			<div class="photos-container col-3">
+				<figure>
+					<img src="assets/img/lights.jpg" alt="" draggable="true" ondragstart="drag(event)" id="foto6">
+				</figure>
+			</div>
+			<div class="photos-container col-3">
+				<figure>
+					<img src="assets/img/the-office.jpg" alt="" draggable="true" ondragstart="drag(event)" id="foto7">
+				</figure>
+			</div>
+			<div class="photos-container col-3">
+				<figure>
+					<img src="assets/img/rohan.jpg" alt="" draggable="true" ondragstart="drag(event)" id="foto8">
+				</figure>
+			</div>
+		</div>
+		<!-- navegación de fotos -->
+		<nav class="row">
+			<ul class="col-12 text-center">
+				<li class="active col-4">Camera Roll <i class="fas fa-chevron-down"></i></li>
+				<li class="col-4">Faces</li>
+				<li class="col-4">Recents</li>
+			</ul>
+		</nav>
+	</div>
+	
+	<!-- jquery -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<!-- mi js -->
+	<script src="assets/js/app.js"></script>
+	<!-- fontawesome -->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+</body>
+</html>
