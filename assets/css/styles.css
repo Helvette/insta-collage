@@ -51,6 +51,10 @@ select {
 	border: none;
 }
 
+.logoInsta {
+	margin: 40px 0;
+}
+
 .sign a {
 	color: white;
 	text-transform: none;
